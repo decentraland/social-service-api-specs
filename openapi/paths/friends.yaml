@@ -1,0 +1,17 @@
+get:
+  operationId: getFriends
+  summary: List of friends
+  tags:
+    - Friends
+  description: >-
+    Retrieves the addresses of the friends of a certain user
+  responses:
+    "200":
+      description: List of addresses
+      content:
+        application/json; charset=utf-8:
+          schema:
+            $ref: ../../components/schemas/friends/200-get-friends.yaml
+          examples:
+            default:
+              $ref: ../../components/examples/friends/200-get-friends.json

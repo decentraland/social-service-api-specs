@@ -1,0 +1,4 @@
+peers:
+  type: array
+  items:
+    type: string

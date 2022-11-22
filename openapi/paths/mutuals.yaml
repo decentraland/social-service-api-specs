@@ -18,7 +18,7 @@ post:
               description: >-
                 The address of the user to query the mutual friends
               type: string
-                example: 0x072Db72D13495635e353bdf6d8073b4Cd7DB3B10
+              example: '0x072Db72D13495635e353bdf6d8073b4Cd7DB3B10'
   responses:
     "200":
       description: >-
@@ -26,13 +26,16 @@ post:
       content:
         application/json; charset=utf-8:
           schema:
-            $ref: ../../components/schemas/friends/200-get-mutual-friends.yaml
+            $ref: ../components/schemas/friends/200-get-mutual-friends.yaml
           examples:
             default:
-              $ref: ../../components/examples/friends/200-get-mutual-friends.json
+              $ref: ../components/examples/friends/200-get-mutual-friends.json
     "400":
       description: >-
         Bad request: address not present or not a valid address.
+    "401":
+      description: >-
+        "Unauthorized request: This means that the user is not correctly authenticated"
     "403":
       description: >-
         Forbidden request: The other user has not granted permission to the authenticated user to view their friends.

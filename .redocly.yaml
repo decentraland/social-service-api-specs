@@ -1,7 +1,7 @@
 # See https://redoc.ly/docs/cli/configuration/ for more information.
-apis:
+apiDefinitions:
   main: openapi/social.yaml
-
+  
 lint:
   extends:
     - recommended

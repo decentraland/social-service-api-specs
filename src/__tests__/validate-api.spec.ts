@@ -1,4 +1,4 @@
-import { SOCIAL_API } from "../../lib/index"
+import { SOCIAL_API } from "../index"
 import { OpenAPISchemaValidator } from "express-openapi-validator/dist/framework/openapi.schema.validator"
 
 // This test is different to redocly lint

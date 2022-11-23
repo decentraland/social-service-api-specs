@@ -1,4 +1,4 @@
-post:
+get:
   operationId: getMutualFriendsBetweenUsers
   summary: List of addresses of the friends shared between two users
   tags:
@@ -8,17 +8,6 @@ post:
     </br>
     It's important to know that if the other user doesn't expose their friends to the authenticated user, the response will be an Forbidden error.
 
-  requestBody:
-    content:
-      application/json:
-        schema:
-          type: object
-          properties:
-            address:
-              description: >-
-                The address of the user to query the mutual friends
-              type: string
-              example: '0x072Db72D13495635e353bdf6d8073b4Cd7DB3B10'
   responses:
     "200":
       description: >-
@@ -30,9 +19,6 @@ post:
           examples:
             default:
               $ref: ../components/examples/friends/200-get-mutual-friends.json
-    "400":
-      description: >-
-        Bad request: address not present or not a valid address.
     "401":
       description: >-
         "Unauthorized request: This means that the user is not correctly authenticated"

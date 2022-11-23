@@ -22,7 +22,7 @@ servers:
     description: Social service production instance
 
 paths:
-  /friends:
-    $ref: "paths/friends.yaml"
-  /friends/mutuals:
-    $ref: "paths/mutuals.yaml"
+  /friends/{userId}:
+    $ref: "paths/friends@{userId}.yaml"
+  /friends/{userId}/mutuals:
+    $ref: "paths/friends@{userId}@mutuals.yaml"

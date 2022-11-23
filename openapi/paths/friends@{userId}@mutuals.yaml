@@ -8,6 +8,16 @@ get:
     </br>
     It's important to know that if the other user doesn't expose their friends to the authenticated user, the response will be an Forbidden error.
 
+  parameters:
+    - in: path
+      name: userId
+      required: true
+      schema:
+        type: string
+        example: 0x072Db72D13495635e353bdf6d8073b4Cd7DB3B10
+      description: >- 
+        Address of the other user to obtain the mutual friends with the authenticated user
+
   responses:
     "200":
       description: >-

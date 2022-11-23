@@ -5,7 +5,15 @@ get:
     - Friends
   description: >-
     Retrieves the addresses of the friends of a certain user
-
+  parameters:
+    - in: path
+      name: userId
+      required: true
+      schema:
+        type: string
+        example: 0x072Db72D13495635e353bdf6d8073b4Cd7DB3B10
+      description: >- 
+        Address of the user whose friends are being queried
   responses:
     "200":
       description: List of addresses

@@ -7,6 +7,6 @@ describe("Validate OAS (Express integration)", () => {
 
   it("Social service: should not be errors when validating API with schema validator", () => {
     const result = validator.validate(SOCIAL_API)
-    expect(result.errors.length).toBe(0)
+    expect(result.errors!.length).toBe(0)
   })
 })

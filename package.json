@@ -22,6 +22,7 @@
     "build:api": "openapi bundle -o lib/api",
     "build:src": "tsc -b",
     "test": "npm run build & run-s test:*",
+    "testL": "run-s test:*",
     "test:api": "openapi lint",
     "test:src": "jest",
     "prepublishOnly": "npm run build && npm run test"

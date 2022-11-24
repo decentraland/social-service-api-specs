@@ -39,8 +39,8 @@ paths:
   /v1/friendships/{userId}/count: # each feature should have their own endpoint
     $ref: "paths/friendships@{userId}@count.yaml"
 
-  # /v1/friendships/me/requests: # get pending requests
-  #   $ref: "paths/friendships@{userId}@requests.yaml"   
+  /v1/friendships/me/requests: # get pending requests
+    $ref: "paths/friendships@{userId}@requests.yaml"   
 
   # /v1/account/config: 
   #   # get all features

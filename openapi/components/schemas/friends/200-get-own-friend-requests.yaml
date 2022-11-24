@@ -3,8 +3,12 @@ properties:
   incoming:
     type: array
     items:
-      type: string
+      type: object
+      properties:
+        address: string
   outgoing:
     type: array
     items:
-      type: string
+      type: object
+      properties:
+        address: string

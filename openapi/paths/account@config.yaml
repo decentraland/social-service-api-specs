@@ -32,8 +32,11 @@ put:
       application/json:
         schema:
           type: object
-          additionalProperties:
-            type: string
+          properties:
+            config:
+              type: object
+              additionalProperties:
+                type: string
 
   responses:
     "200":

@@ -35,18 +35,12 @@ paths:
   /v1/friendships/{userId}:
     $ref: "paths/friendships@{userId}.yaml"
   /v1/friendships/{userId}/mutuals:
-    $ref: "paths/friendships@{userId}@mutuals.yaml"    
+    $ref: "paths/friendships@{userId}@mutuals.yaml"
   /v1/friendships/{userId}/count: # each feature should have their own endpoint
     $ref: "paths/friendships@{userId}@count.yaml"
 
   /v1/friendships/me/requests: # get pending requests
-    $ref: "paths/friendships@me@requests.yaml"   
+    $ref: "paths/friendships@me@requests.yaml"
 
-  # /v1/account/config: 
-  #   # get all features
-
-  # /v1/account/config:
-  #   $ref: ".."
-  #     # post
-  #       # object
-  #       # {feature}: value
+  /v1/account/config:
+    $ref: "paths/account@config.yaml"

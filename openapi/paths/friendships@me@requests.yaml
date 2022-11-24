@@ -3,6 +3,7 @@ get:
   summary: Gets the addresses of the authenticated user's incoming and outgoing friend requests
   tags:
     - Friends
+    - Requests
   description: >-
     Retrieves the list of addresses of the users that the authenticated user has either sent or received a friendship request
 

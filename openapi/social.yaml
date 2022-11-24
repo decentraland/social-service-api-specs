@@ -36,10 +36,10 @@ paths:
     $ref: "paths/friendships@{userId}.yaml"
   /v1/friendships/{userId}/mutuals:
     $ref: "paths/friendships@{userId}@mutuals.yaml"
-  /v1/friendships/{userId}/count: # each feature should have their own endpoint
+  /v1/friendships/{userId}/count:
     $ref: "paths/friendships@{userId}@count.yaml"
 
-  /v1/friendships/me/requests: # get pending requests
+  /v1/friendships/me/requests:
     $ref: "paths/friendships@me@requests.yaml"
 
   /v1/account/config:

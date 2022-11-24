@@ -2,7 +2,7 @@
 
 API definition for the Social Service implementation.  
 
-Check out the public API docs [here](https://decentraland.github.io/social-service-api-specs/) 
+Check out the public API docs [here](https://social-service-api-specs.pages.dev/)
 
 ## Working on the Social Service API Definition
 

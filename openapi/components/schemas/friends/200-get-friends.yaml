@@ -5,4 +5,5 @@ properties:
     items:
       type: object
       properties:
-        address: string
+        address: 
+          type: string

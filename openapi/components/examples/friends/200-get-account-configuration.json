@@ -1,6 +1,8 @@
 {
   "value": {
-    "friends": "FRIENDS_OF_FRIENDS",
-    "friendsCount": "EVERYONE"
+    "config": {
+      "friends": "FRIENDS_OF_FRIENDS",
+      "friendsCount": "EVERYONE"
+    }
   }
 }

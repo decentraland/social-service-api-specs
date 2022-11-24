@@ -5,10 +5,12 @@ properties:
     items:
       type: object
       properties:
-        address: string
+        address: 
+          type: string
   outgoing:
     type: array
     items:
       type: object
       properties:
-        address: string
+        address: 
+          type: string

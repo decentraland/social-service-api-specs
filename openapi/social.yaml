@@ -21,8 +21,26 @@ servers:
   - url: "https://social-service.decentraland.org"
     description: Social service production instance
 
+components:
+  securitySchemes:
+    bearerAuth: # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      description: Access token
+
+security:
+  - bearerAuth: []
+
 paths:
-  /friends:
-    $ref: "paths/friends.yaml"
-  /friends/mutuals:
-    $ref: "paths/mutuals.yaml"
+  /v1/friendships/{userId}:
+    $ref: "paths/friendships@{userId}.yaml"
+  /v1/friendships/{userId}/mutuals:
+    $ref: "paths/friendships@{userId}@mutuals.yaml"
+  /v1/friendships/{userId}/count:
+    $ref: "paths/friendships@{userId}@count.yaml"
+
+  /v1/friendships/me/requests:
+    $ref: "paths/friendships@me@requests.yaml"
+
+  /v1/account/config:
+    $ref: "paths/account@config.yaml"

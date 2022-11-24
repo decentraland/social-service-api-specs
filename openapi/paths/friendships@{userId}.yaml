@@ -1,23 +1,19 @@
-post:
+get:
   operationId: getFriends
   summary: List of friends
   tags:
     - Friends
   description: >-
     Retrieves the addresses of the friends of a certain user
-
-  requestBody:
-    content:
-      application/json:
-        schema:
-          type: object
-          properties:
-            address:
-              description: >-
-                The address of the user to query the friends
-              type: string
-              example: "0x072Db72D13495635e353bdf6d8073b4Cd7DB3B10"
-
+  parameters:
+    - in: path
+      name: userId
+      required: true
+      schema:
+        type: string
+        example: 0x072Db72D13495635e353bdf6d8073b4Cd7DB3B10
+      description: >- 
+        Address of the user whose friends are being queried
   responses:
     "200":
       description: List of addresses
@@ -28,9 +24,6 @@ post:
           examples:
             default:
               $ref: ../components/examples/friends/200-get-friends.json
-    "400":
-      description: >-
-        Bad request: address not present or not a valid address.
     "401":
       description: >-
         "Unauthorized request: This means that the user is not correctly authenticated"

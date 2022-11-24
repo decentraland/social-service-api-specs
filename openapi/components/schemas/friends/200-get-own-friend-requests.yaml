@@ -1,6 +1,13 @@
 type: object
 properties:
-  friends:
+  incoming:
+    type: array
+    items:
+      type: object
+      properties:
+        address: 
+          type: string
+  outgoing:
     type: array
     items:
       type: object

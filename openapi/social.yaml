@@ -40,7 +40,7 @@ paths:
     $ref: "paths/friendships@{userId}@count.yaml"
 
   /v1/friendships/me/requests: # get pending requests
-    $ref: "paths/friendships@{userId}@requests.yaml"   
+    $ref: "paths/friendships@me@requests.yaml"   
 
   # /v1/account/config: 
   #   # get all features

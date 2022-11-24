@@ -32,7 +32,21 @@ security:
   - bearerAuth: []
 
 paths:
-  /friends/{userId}:
-    $ref: "paths/friends@{userId}.yaml"
-  /friends/{userId}/mutuals:
-    $ref: "paths/friends@{userId}@mutuals.yaml"
+  /v1/friendships/{userId}:
+    $ref: "paths/friendships@{userId}.yaml"
+  /v1/friendships/{userId}/mutuals:
+    $ref: "paths/friendships@{userId}@mutuals.yaml"    
+  /v1/friendships/{userId}/count: # each feature should have their own endpoint
+    $ref: "paths/friendships@{userId}@count.yaml"
+
+  # /v1/friendships/me/requests: # get pending requests
+  #   $ref: "paths/friendships@{userId}@requests.yaml"   
+
+  # /v1/account/config: 
+  #   # get all features
+
+  # /v1/account/config:
+  #   $ref: ".."
+  #     # post
+  #       # object
+  #       # {feature}: value

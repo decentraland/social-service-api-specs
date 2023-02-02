@@ -5,7 +5,7 @@ get:
     - Friends
     - Requests
   description: >-
-    Retrieves the list of friendship requests that the authenticated user has either sent or received a friendship request
+    Retrieves the list of friendship requests that the authenticated user has either sent or received
 
   responses:
     "200":

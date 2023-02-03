@@ -7,7 +7,15 @@ get:
     - Requests
   description: >-
     Retrieves the list of sent messages for incoming and outgoing friendship request events.
-
+  parameters:
+    - in: path
+      name: friendshipId
+      required: true
+      schema:
+        type: string
+        example: 67e55044-mmmm-426f-9247-bb680e5fe0c8
+      description: >- 
+        Friendship id of the friendship request events that are being queried
   responses:
     "200":
       description: >-
@@ -23,5 +31,5 @@ get:
       description: >-
         "Unauthorized request: This means that the user is not correctly authenticated"
     "404":
-    description: >-
-      "Not found: This means that the user making the request is not present in the friendship"
+      description: >-
+        "Not found: This means that the user making the request is not present in the friendship"

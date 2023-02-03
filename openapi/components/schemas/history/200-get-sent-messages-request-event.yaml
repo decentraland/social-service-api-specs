@@ -6,7 +6,7 @@ properties:
       type: object
       properties:
         friendshipId:
-          type: uuid
+          type: string
         actingUser:
           type: string
         timestamp:

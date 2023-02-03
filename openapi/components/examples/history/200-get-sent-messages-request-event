@@ -1,0 +1,24 @@
+{
+  "value": {
+    "messagesRequestEvents": [
+      {
+        "friendshipId": "67e55044-mmmm-426f-9247-bb680e5fe0c8",
+        "actingUser": "a_user_id",
+        "timestamp": 1675189670,
+        "message": "hiii, wanna be friends?"
+      },
+      {
+        "friendshipId": "67e55044-10b1-0000-9247-bb680e5fe0a1",
+        "actingUser": "b_user_id",
+        "timestamp": 1575189670,
+        "message": "hi, your avatar looks awesome"
+      },
+      {
+        "friendshipId": "67e55044-10b1-426f-1111-bb680e5fe0c8",
+        "actingUser": "own_user_id",
+        "timestamp": 1575179670,
+        "message": "u r sooo coool!"
+      }
+    ]
+  }
+}

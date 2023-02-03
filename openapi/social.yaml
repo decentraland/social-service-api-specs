@@ -42,5 +42,8 @@ paths:
   /v1/friendships/me/requests:
     $ref: "paths/friendships@me@requests.yaml"
 
+  /v1/friendships/{friendshipId}/request-events/messages:
+    $ref: "friendships@{friendshipId}@request-events@mesages.yaml"
+
   /v1/account/config:
     $ref: "paths/account@config.yaml"

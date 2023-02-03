@@ -1,0 +1,15 @@
+type: object
+properties:
+  messagesRequestEvents:
+    type: array
+    items:
+      type: object
+      properties:
+        friendshipId:
+          type: uuid
+        actingUser:
+          type: string
+        timestamp:
+          type: number
+        message:
+          type: string

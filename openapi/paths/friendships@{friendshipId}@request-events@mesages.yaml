@@ -1,0 +1,27 @@
+get:
+  operationId: getRequestEventsMessages
+  summary: Gets the list of sent messages of incoming and outgoing friendship request events.
+  tags:
+    - Friends
+    - History
+    - Requests
+  description: >-
+    Retrieves the list of sent messages for incoming and outgoing friendship request events.
+
+  responses:
+    "200":
+      description: >-
+        An object with the sent messages in friendship request events.
+      content:
+        application/json; charset=utf-8:
+          schema:
+            $ref: ../components/schemas/friends/200-get-own-friend-requests.yaml
+          examples:
+            default:
+              $ref: ../components/examples/friends/200-get-own-friend-requests.json
+    "401":
+      description: >-
+        "Unauthorized request: This means that the user is not correctly authenticated"
+     "404":
+      description: >-
+        "Not found: This means that the user making the request is not present in the friendship"

@@ -5,12 +5,23 @@ properties:
     items:
       type: object
       properties:
-        address: 
+        address:
+          type: string
+        createdAt:
+          type: number
+        message:
           type: string
   outgoing:
     type: array
     items:
       type: object
       properties:
-        address: 
+        address:
           type: string
+        createdAt:
+          type: number
+        message:
+          type: string
+required:
+  - address
+  - createdAt

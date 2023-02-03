@@ -1,16 +1,16 @@
 get:
   operationId: getOwnFriendRequests
-  summary: Gets the addresses of the authenticated user's incoming and outgoing friend requests
+  summary: Gets the incoming and outgoing friendship requests of the authenticated user
   tags:
     - Friends
     - Requests
   description: >-
-    Retrieves the list of addresses of the users that the authenticated user has either sent or received a friendship request
+    Retrieves the list of friendship requests that the authenticated user has either sent or received
 
   responses:
     "200":
       description: >-
-        An object with both the incoming and outgoing addresses's of friend requests
+        An object with both the incoming and outgoing friendship requests
       content:
         application/json; charset=utf-8:
           schema:

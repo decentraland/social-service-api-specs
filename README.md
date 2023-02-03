@@ -31,4 +31,13 @@ docs engine.  Open it to find examples and
 [read the docs](https://redoc.ly/docs/cli/configuration/)
 for more information.
 
+## How to Contribute
 
+To add an endpoint, you need to:
+
+1. List the path in the openapi/paths directory at https://github.com/decentraland/social-service-api-specs/tree/main/openapi/paths.
+2. Reference it in the social.yaml file at https://github.com/decentraland/social-service-api-specs/blob/main/openapi/social.yaml.
+3. Define it in the friends (*) schema in the components directory at https://github.com/decentraland/social-service-api-specs/tree/main/openapi/components/schemas/friends.
+4. Add an example in the friends (*) examples directory at https://github.com/decentraland/social-service-api-specs/tree/main/openapi/components/examples/friends.
+
+Note: You may need to create new folders that align with your contribution.

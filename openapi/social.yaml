@@ -43,7 +43,7 @@ paths:
     $ref: "paths/friendships@me@requests.yaml"
 
   /v1/friendships/{friendshipId}/request-events/messages:
-    $ref: "friendships@{friendshipId}@request-events@messages.yaml"
+    $ref: "paths/friendships@{friendshipId}@request-events@messages.yaml"
 
   /v1/account/config:
     $ref: "paths/account@config.yaml"

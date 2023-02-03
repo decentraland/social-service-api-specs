@@ -22,6 +22,6 @@ get:
     "401":
       description: >-
         "Unauthorized request: This means that the user is not correctly authenticated"
-     "404":
-      description: >-
-        "Not found: This means that the user making the request is not present in the friendship"
+    "404":
+    description: >-
+      "Not found: This means that the user making the request is not present in the friendship"

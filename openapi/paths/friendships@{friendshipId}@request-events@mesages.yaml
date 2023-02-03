@@ -15,10 +15,10 @@ get:
       content:
         application/json; charset=utf-8:
           schema:
-            $ref: ../components/schemas/friends/200-get-own-friend-requests.yaml
+            $ref: ../components/schemas/history/200-get-sent-messages-request-event.yaml
           examples:
             default:
-              $ref: ../components/examples/friends/200-get-own-friend-requests.json
+              $ref: ../components/examples/history/200-get-sent-messages-request-event.json
     "401":
       description: >-
         "Unauthorized request: This means that the user is not correctly authenticated"

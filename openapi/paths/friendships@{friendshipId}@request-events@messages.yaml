@@ -2,7 +2,6 @@ get:
   operationId: getRequestEventsMessages
   summary: Gets the list of sent messages of incoming and outgoing friendship request events.
   tags:
-    - Friends
     - History
     - Requests
   description: >-

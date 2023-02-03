@@ -7,9 +7,11 @@ properties:
       properties:
         friendshipId:
           type: string
+          format: uuid
         actingUser:
           type: string
         timestamp:
           type: number
+          format: timestamp
         message:
           type: string

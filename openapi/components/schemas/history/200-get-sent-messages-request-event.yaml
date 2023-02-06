@@ -15,3 +15,8 @@ properties:
           format: timestamp
         message:
           type: string
+required:
+  - friendshipId
+  - actingUser
+  - timestamp
+  - message
